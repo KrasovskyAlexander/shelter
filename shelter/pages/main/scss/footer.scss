@@ -1,0 +1,62 @@
+.footer{
+    padding-top: 2.5rem;
+    background: url(../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    &__flex{
+        display: flex;
+        align-items: flex-start;
+    }
+    &__content{
+        padding-top: 1rem;
+        padding-right: 10rem;
+        &:nth-child(1){
+            flex-basis: 38%;
+        }
+        &:nth-child(2){
+            flex-basis: 40%;
+        }
+    }
+    &__title{
+        font-family: 'georgia';
+        font-weight: normal;
+        font-size: 2.1875rem;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        margin-bottom: 2.5rem;
+        &_ahyet{
+            margin-bottom: 2.125rem;
+        }
+
+    }
+    &__link{
+        display: flex;
+        margin-bottom: 2.5rem;
+        align-items: center;
+        @include transition();
+        &_ahyet{
+           margin-bottom: 2rem;
+        }
+        :nth-child(3){
+            margin-bottom: 0;
+        }
+        img{
+            padding-right: 1.25rem;
+        }
+        a{
+            font-family: 'georgia';
+            font-size: 1.25rem;
+            text-decoration: none;
+            font-weight: normal;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+            color: #F1CDB3;
+            @include transition();
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    &__img{
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,104 @@
+.pets{
+    padding: 5rem 0 6.25rem 0;
+    background-color:$color-light-l;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        height: 100%;
+    }
+    &__title{
+        width: 34%;
+        font-weight: normal;
+        padding-left: 3px;
+        text-align: center;
+        font-family: 'georgia';
+        font-size: 2.1875rem;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        padding-bottom: 3.75rem;
+    }
+    &__arrows{
+        cursor: pointer;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        padding: 21px 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-right: 3.3125rem;
+        &:nth-child(3){
+            transform: rotate(180deg);
+            margin-left: 53px;
+            margin-right: 0;
+        }
+        @include transition();
+        &:hover{
+            background: #FDDCC4;
+        }
+    }
+    &__slider{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 3.75rem;
+        
+    }
+    &__slides-block{
+        display: flex;
+        z-index: 2;
+        height: 435px;
+    }
+    &__slides-cards{
+        cursor: pointer;
+        & + .pets__slides-cards{
+            margin-left: 5.625rem;
+        }
+        border-radius: 9px 9px 0px 0px;
+        background-color: $color-light-s;
+        text-align: center;
+        &_fade{
+            animation: fade 1.4s ease-in-out;
+        }
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+        &__img{
+            padding-bottom: 1.875rem;
+        }
+        &__name{
+            padding-bottom: 1.875rem;
+            font-family: 'georgia';
+            font-weight: normal;
+            font-size: 1.25rem;
+            line-height: 1.4375rem;
+            letter-spacing: 0.06em;
+            padding-left: 2px;
+            color: #545454;
+        }
+        &__btn{
+            border: 2px solid #FDDCC4;
+            padding: 13px 43px;
+            background-color: $color-light-s;
+            font-family: 'georgia';
+            font-size: 1.0625rem;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: #292929;
+            margin-bottom: 30px;
+        }
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,13 @@
+@mixin mainFonts{
+    font-family: 'georgia';
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin secondFonts{
+    font-family: 'arial';
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin transition(){
+    transition: all .4s ease-in-out;
+}

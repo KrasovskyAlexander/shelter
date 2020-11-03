@@ -1,0 +1,37 @@
+.start-section{
+    background: url(../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    padding: 60px 0 0 0;
+    &__flex{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 3.75rem;
+    }
+    &__content{
+        flex-basis: 42%;
+        padding-top: 10.25rem;
+        padding-right: 2.625rem;
+        &__title{
+            margin: 0;
+            margin-bottom: 2.5625rem;
+            width: 70%;
+            font-family: 'georgia';
+            font-weight: normal;
+            font-size: 2.75rem;
+            line-height: 130%;
+            color: #FFFFFF;
+        }
+        &__text{
+            font-family: 'arial';
+            font-weight: 400;
+            font-size: 0.9375rem;
+            line-height: 160%;
+            color: #CDCDCD;
+            margin-bottom: 2.5625rem;
+        }
+    }
+    &__img{
+        flex-basis: 58%;
+        align-self: flex-end;
+        line-height: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.help{
+    padding: 5rem 0 6.25rem 0;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content{
+        padding: 0 5.4375rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 7.4375rem;
+
+    }
+    &__title{
+        width: 30%;
+        padding-bottom: 3.75rem;
+        font-family: 'georgia';
+        font-weight: normal;
+        font-size: 2.1875rem;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+        text-align: center;
+    }
+    &__card{
+        text-align: center;
+        margin-bottom: 55px;
+        &:nth-child(n+6){
+            margin-bottom: 0;
+        }
+    }
+    &__img{
+        padding-bottom: 30px;
+    }
+    &__subscribe{
+        font-family: 'georgia';
+        font-size: 1.25rem;
+        line-height: 115%;
+        letter-spacing: 0.061em;
+        color: #545454;
+    }
+}

@@ -1,0 +1,35 @@
+@import "../node_modules/normalize.css/normalize";
+@import './base/fonts';
+@import './base/mixin';
+@import './base/var';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.container{
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+
+.body_act{
+    overflow : hidden;
+}
+
+
+@import './blocks/title';
+@import './blocks/btn';
+@import './blocks/modal.scss';
+@import './blocks/card';
+
+
+@import './section/header.scss';
+@import './section/pets';
+@import './section/footer';
+@import './media';
+

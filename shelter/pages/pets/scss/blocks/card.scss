@@ -1,0 +1,33 @@
+.card {
+    background-color: $color-light-s;
+    line-height: 0;
+    border-radius: 9px;
+    flex-basis: 22.5%;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    &__img {
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        @include mainFonts();
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        text-align: center;
+        padding-bottom: 3rem;
+        padding-left: 2px;
+    }
+
+    &__btng {
+        @include mainFonts();
+        display: block;
+        font-size: 1.7rem;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: $color-dark-3xl;
+        text-align: center;
+        margin: 0 auto 3rem;
+    }
+}

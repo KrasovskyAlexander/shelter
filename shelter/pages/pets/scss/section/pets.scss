@@ -1,0 +1,119 @@
+.pets {
+    background-color: $color-light-l;
+    padding: 20rem 0 10rem 0;
+    &_active{
+        padding: 42px 0 10rem 0;
+    }
+    &__title {
+        text-align: center;
+        color: $color-dark-l;
+        padding-left: 2px;
+        padding-top: 1px;
+        margin-bottom: 5.9rem;
+    }
+
+    &__wrapper {
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        min-height: 900px;
+        
+    }
+
+    &__cerd{
+        z-index: 1;
+        background-color: $color-light-s;
+        line-height: 0;
+        border-radius: 9px;
+        flex-basis: 22.5%;
+        margin-bottom: 3rem;
+        cursor: pointer;
+        @include transition();
+        &:hover{
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+    }
+
+    &__img {
+        padding-bottom: 30px;
+    }
+
+    &__name{
+        @include mainFonts();
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        text-align: center;
+        padding-bottom: 3rem;
+        padding-left: 2px;
+    }
+
+    &__btng {
+        @include mainFonts();
+        display: block;
+        font-size: 1.7rem;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: $color-dark-3xl;
+        text-align: center;
+        margin: 0 auto 3rem;
+    }
+
+    &__wrapper-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    &__btn {
+        @include mainFonts();
+        @include transition();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        background-color: $color-light-l;
+        border: 2px solid $color-primary;
+        border-radius: 100px;
+        &:hover{
+            background: $color-primary;
+        }
+        & + button {
+            margin-left: 2rem;
+        }
+        font-size: 2rem;
+        line-height: 115%;
+        &_noactive{
+            border: 2px solid $color-dark-s;
+            color: $color-dark-s;
+            cursor: default;
+            &:hover{
+                background: none;
+            }
+        }
+        &_number{
+            cursor: default;
+            background: $color-primary;
+            border: 2px solid $color-primary;
+        }
+    }
+}
+.fade{
+    animation: fadeg 2s ease-in-out;
+}
+
+@keyframes fadeg {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

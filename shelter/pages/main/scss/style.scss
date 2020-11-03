@@ -1,0 +1,49 @@
+@import "../node_modules/normalize.css/normalize";
+$primary-color:#F1CDB3;
+$color-light-l : #F6F6F6;
+$color-light-xl : #ffffff;
+$color-light-s : #FAFAFA;
+$color-dark-s: #CDCDCD;
+@mixin transition(){
+    transition: all .4s ease-in-out;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+ }
+
+ .body_act{
+    overflow : hidden;
+ }
+
+ .container{
+     max-width: 1280px;
+     padding: 0 40px;
+     margin: 0 auto;
+ }
+div{
+     line-height: 0;
+ }
+
+
+
+
+@import './fonts.scss';
+@import './button.scss';
+@import './header.scss';
+@import './startSection';
+@import './aboutSection.scss';
+@import './petsSection';
+@import './helpSection';
+@import './donationSection.scss';
+@import './footer';
+@import './modal';
+@import './media';
+
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pets</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container header__flex">
+            <button class="header__logo btnMain">
+                <h1 class="header__title title">Cozy House</h1>
+                <div class="header__subtitle">Shelter for pets in Boston</div>
+            </button>
+            <nav class="header__nav">
+                <a href="../main/index.html" class="header__link">About the shelter</a>
+                <a href="../pets/index.html" class="header__link header__link_active">Our pets</a>
+                <a href="" class="header__link header__link_noactive">Help the shelter</a>
+                <a href="" class="header__link header__link_noactive">Contacts</a>
+            </nav>
+            <!-- <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+        </div>
+    </header>
+    <nav class="nav2">
+        <a href="../main/index.html" class="nav-logo">
+            <h1 class="nav2__title title">Cozy House</h1>
+            <h2 class="nav2__subtitle">Shelter for pets in Boston</h2>
+        </a>
+        <a href="../main/index.html" class="nav2__link">About the shelter</a>
+        <a href="../pets/pets.html" class="nav2__link header__link_active">Our pets</a>
+        <a href="" class="nav2__link nav2__link_noactive">Help the shelter</a>
+        <a href="" class="nav2__link nav2__link_noactive">Contacts</a>
+    </nav>
+    <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <main>
+        <section class="pets">
+            <div class="container pets__flex">
+                <h1 class="pets__title title">Our friends who <br> are looking for a house</h1>
+                <div class="pets__wrapper">
+
+                </div>
+                <div class="pets__wrapper-btn">
+                    <button class="pets__btn begin"> << </button>
+                    <button class="pets__btn left"> < </button>
+                    <button class="pets__btn pets__btn_number"> 1 </button>
+                    <button class="pets__btn pets__btn_active right"> > </button>
+                    <button class="pets__btn pets__btn_active end"> >> </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__flex">
+            <div class="footer__content">
+                <h3 class="footer__title title">For questions and suggestions</h3>
+                <a href="mailto:email@shelter.com" class="footer__link">
+                    <img src="../../assets/icons/icon-email.svg" alt="email">
+                    <div >email@shelter.com</div>
+                </a>
+                <a href="tel:+136745677554" class="footer__link">
+                    <img src="../../assets/icons/icon-phone.svg" alt="phone">
+                    <div >+13 674 567 75 54</div>
+                </a>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title title footer__title_ahyet">We are waiting for your visit</h3>
+                <a href="https://goo.gl/maps/3bsxyEabDWwmKoHx9" target="__blank" class="footer__link footer__link_ahyet">
+                    <img src="../../assets/icons/icon-marker.svg" alt="marker">
+                    <div target="__blank">1 Central Street, Boston (entrance from the store)</div>
+                </a>
+                <a href="https://goo.gl/maps/sQHhUt8C5CEV1w749" target="__blank" class="footer__link">
+                    <img src="../../assets/icons/icon-marker.svg" alt="marker">
+                    <div  >18 South Park, London</div>
+                </a>
+            </div>
+            <div class="footer__img"><img src="../../assets/img/footer-puppy.png" alt=""></div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal__content">
+        </div>
+        <div class="modal__close"><img src="../../assets/icons/Vector.svg" alt=""></div>
+    </div>
+    <div class="overlay">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.btn{
+    padding: 1.3rem 4.3rem;
+    background-color: $color-light-s;
+    cursor: pointer;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    @include transition();
+    &:hover{
+        background: $color-primary;
+    }
+}
